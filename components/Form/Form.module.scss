@@ -109,5 +109,18 @@
         }
       }
     }
+    .mailSended {
+      width: max-content;
+      border-radius: 24px;
+      background-color: yellowgreen;
+      font-size: 16px;
+      color: white;
+      height: auto;
+      padding: 10px;
+      align-self: center;
+      font-family: PoppinsBold;
+      letter-spacing: 1px;
+      position: absolute;
+    }
   }
 }

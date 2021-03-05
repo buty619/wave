@@ -3,27 +3,13 @@ import * as React from 'react';
 //Styles
 import styles from './OurServices.module.scss';
 
-const PEOPLE_PROFILE = [
-  {
-    name:'Sebastian Buitrago',
-    position: 'Planner',
-    photo: '/images/people/foto-sebas.png'
-  },
-  {
-    name:'Sergio Gonzalez',
-    position: 'Direccion de Arte',
-    photo: '/images/people/foto-sergio.png'
-  },
-  {
-    name:'Julian Borda',
-    position: 'Digital Media Planner',
-    photo: '/images/people/foto-juli.png'
-  },
-  {
-    name:'Sergio Galindo',
-    position: 'Community Manager',
-    photo: '/images/people/foto-sergio-d.png'
-  }
+const OUR_SERVICES = [
+  '/images/ourServices/img3.png',
+  '/images/ourServices/img5.png',
+  '/images/ourServices/img6.png',
+  '/images/ourServices/img2.png',
+  '/images/ourServices/img4.jpg',
+  '/images/ourServices/img1.jpg',
 ]
 
 const OurServices: React.FC = () => (
@@ -34,15 +20,11 @@ const OurServices: React.FC = () => (
     </h1>
     <span className={styles.line} />
     <div className={styles.people}>
-      {/* {PEOPLE_PROFILE.map((person, i)=>(
+      {OUR_SERVICES.map((img, i)=>(
         <div key={i}>
-          <img src={person.photo} alt={person.name}/>
-          <div className={styles.texts}>
-            <h2>{person.name}</h2>
-            <h3>{person.position}</h3>
-          </div>
+          <img src={img} alt={img}/>
         </div>
-      ))} */}
+      ))}
     </div>
   </section>
 );

@@ -3,6 +3,9 @@ import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import classnames from 'classnames';
 
+//Utils
+import sendMail from '../../utils/sendMail';
+
 //Styles
 import styles from './Form.module.scss';
  
@@ -35,11 +38,15 @@ const INITIAL_FORM = {
 
 const ContactForm: React.FC  = () => {
 
-  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-  const handleSubmit = values => {
-    // same shape as initial values
-    console.log(values);
-  }
+  const [response, setResponse] = React.useState(false);
+
+  const handleSubmit = React.useCallback(async (values, { resetForm }) => {
+    const responseData = await sendMail(values);
+    setResponse(responseData.statusText === 'OK - Mail Sended');
+    resetForm();
+  },[]);
+
+  React.useEffect(()=>{setTimeout(()=>{setResponse(false)},5000)},[response]);
 
   return (
     <section className={styles.container}>
@@ -99,6 +106,11 @@ const ContactForm: React.FC  = () => {
               </div>
             </div>
             <button type="submit">ENVIAR</button>
+            {
+              response && <div className={classnames(styles.errorMsg, styles.mailSended)}>
+                email enviado correctamente
+              </div>
+            }
           </Form>
         )}
       </Formik>

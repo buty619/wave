@@ -16,3 +16,11 @@ export interface PreLoadData {
 export type AnyData = Record<string, unknown> | { example: string };
 
 export type Language = 'eng' | 'spa';
+
+export interface mailData {
+  name: string,
+  cell: string,
+  email: string,
+  message: string,
+  checkBox: boolean
+}
