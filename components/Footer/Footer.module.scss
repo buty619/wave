@@ -1,0 +1,61 @@
+@import '../../styles/variables.module.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #00c9ff;
+  height: 400px;
+  @media (min-width: $tablet) {
+    height: 800px;
+  }
+  @media (min-width: $desktop) {
+    height: 800px;
+  }
+  h1 {
+    font-family: PoppinsBold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin: 0;
+    @media (min-width: $tablet) {
+      font-size: 28px;
+    }
+    @media (min-width: $desktop) {
+      font-size: 48px;
+    }
+  }
+  h2 {
+    font-size: 12px;
+    @media (min-width: $tablet) {
+      font-size: 16px;
+    }
+    @media (min-width: $desktop) {
+      font-size: 16px;
+    }
+  }
+  .social {
+    display: flex;
+    img {
+      width: 80px;
+      @media (min-width: $tablet) {
+        width: 100px;
+      }
+      @media (min-width: $desktop) {
+        width: 150px;
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media (min-width: $tablet) {
+      margin-top: 180px;
+    }
+    @media (min-width: $desktop) {
+      margin-top: 180px;
+    }
+  }
+}

@@ -19,11 +19,9 @@ const OurServices: React.FC = () => (
       <span>SERVICIOS</span>
     </h1>
     <span className={styles.line} />
-    <div className={styles.people}>
+    <div className={styles.services}>
       {OUR_SERVICES.map((img, i)=>(
-        <div key={i}>
-          <img src={img} alt={img}/>
-        </div>
+        <img src={img} alt={img} key={i}/>
       ))}
     </div>
   </section>

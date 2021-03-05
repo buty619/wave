@@ -6,6 +6,7 @@ import Banner from '../components/Banner'
 import Form from '../components/Form'
 import People from '../components/People'
 import OurServices from '../components/OurServices'
+import Footer from '../components/Footer'
 
 
 const Home: React.FC = () => (
@@ -14,7 +15,7 @@ const Home: React.FC = () => (
     <Form />
     <People />
     <OurServices />
-    <div>Test</div>
+    <Footer />
   </Layout>
 );
 
