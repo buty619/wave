@@ -53,5 +53,17 @@
         margin: 5px;
       }
     }
+
+    @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+      img {
+        min-width: 70%;
+      }
+    }
+
+    @media not all and (min-resolution: 0.001dpcm) {
+      img {
+        min-width: 70%;
+      }
+    }
   }
 }
