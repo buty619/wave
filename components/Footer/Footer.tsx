@@ -6,7 +6,7 @@ import styles from './Footer.module.scss';
 const Footer: React.FC = () => (
   <section className={styles.container}>
     <div className={styles.footer}>
-      <h1>CONÉTATE CON NOSOTROS</h1>
+      <h1>CONÉCTATE CON NOSOTROS</h1>
       <h2>Conversemos sobre nuestro proyecto</h2>
       <div className={styles.social}>
         <a href="https://instagram.com/oladigital_?igshid=wqbgzgk1wcl9" target="_blank" rel="noreferrer">
