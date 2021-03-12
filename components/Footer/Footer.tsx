@@ -9,7 +9,7 @@ const Footer: React.FC = () => (
       <h1>CONÉCTATE CON NOSOTROS</h1>
       <h2>Conversemos sobre nuestro proyecto</h2>
       <div className={styles.social}>
-        <a href="https://instagram.com/oladigital_?igshid=wqbgzgk1wcl9" target="_blank" rel="noreferrer">
+        <a href="https://www.facebook.com/OlaDigitalAgencia" target="_blank" rel="noreferrer">
           <img src='/images/facebook.svg' alt="facebook"/>
         </a>
         <a href="https://instagram.com/oladigital_?igshid=wqbgzgk1wcl9" target="_blank" rel="noreferrer">

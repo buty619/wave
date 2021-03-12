@@ -13,8 +13,8 @@ const Home: React.FC = () => (
   <Layout>
     <Banner />
     <Form />
-    <People />
     <OurServices />
+    <People />
     <Footer />
   </Layout>
 );

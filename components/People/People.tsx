@@ -11,7 +11,7 @@ const PEOPLE_PROFILE = [
   },
   {
     name:'Sergio Gonzalez',
-    position: 'Direccion de Arte',
+    position: 'Dirección de Arte',
     photo: '/images/people/foto-sergio.png'
   },
   {
