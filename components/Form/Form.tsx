@@ -99,7 +99,7 @@ const ContactForm: React.FC  = () => {
             <div>
               <div className={styles.checkbox}>
                 <Field name="checkBox" type="checkbox" />
-                <span>Acepte aqui el uso de sus datos personales</span>
+                <span>Acepte aquí el uso de sus datos personales</span>
               </div>
               <div className={styles.errorMsg}>
                 {touched.checkBox && errors.checkBox}
