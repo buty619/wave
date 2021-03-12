@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Head from 'next/head';
 import classnames from 'classnames';
+import WpButton from '../WpButton'
 
 //Styles
 import styles from './Layout.module.scss';
@@ -34,6 +35,7 @@ const Layout: React.FC<Props> = ({ children }) => {
           CARGANDO
         </div>
       </div>
+      <WpButton />
     </div>
   );
 };
